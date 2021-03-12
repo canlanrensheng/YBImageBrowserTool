@@ -1,0 +1,6 @@
+framework module YBImageBrowserTool {
+  umbrella header "YBImageBrowserTool-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,6 +7,7 @@
 //
 
 #import "CJViewController.h"
+#import "YBImageBrowser.h"
 
 @interface CJViewController ()
 
@@ -17,7 +18,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    YBImageBrowseCellData *data = YBImageBrowseCellData.new;
+    data.url = [NSURL URLWithString:@""];
+    data.thumbImage = nil;
+    YBImageBrowser *browser = [YBImageBrowser new];
+    browser.sheetView = nil;
+    browser.dataSourceArray = @[data];
+    [browser show];
 }
 
 - (void)didReceiveMemoryWarning

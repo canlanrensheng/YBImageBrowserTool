@@ -60,13 +60,13 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		679A05FC20829C99BF3E86F0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		679A05FC20829C99BF3E86F0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC56F2A10B0B815C3DA87B24 /* Pods-YBImageBrowserTool_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YBImageBrowserTool_Tests.release.xcconfig"; path = "Target Support Files/Pods-YBImageBrowserTool_Tests/Pods-YBImageBrowserTool_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		BB79502AEA15EF9CA8EAE240 /* Pods_YBImageBrowserTool_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YBImageBrowserTool_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C538B742201DF42ECE2F9F96 /* YBImageBrowserTool.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = YBImageBrowserTool.podspec; path = ../YBImageBrowserTool.podspec; sourceTree = "<group>"; };
-		E5E8614469AC3EFCE292E5ED /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		C538B742201DF42ECE2F9F96 /* YBImageBrowserTool.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YBImageBrowserTool.podspec; path = ../YBImageBrowserTool.podspec; sourceTree = "<group>"; };
+		E5E8614469AC3EFCE292E5ED /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,7 +193,6 @@
 				3A9F3D809EC8EC26362B52A5 /* Pods-YBImageBrowserTool_Tests.debug.xcconfig */,
 				AC56F2A10B0B815C3DA87B24 /* Pods-YBImageBrowserTool_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -248,6 +247,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = canlanrensheng;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = M9A44D2XZU;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -258,6 +260,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -324,11 +327,15 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-YBImageBrowserTool_Example/Pods-YBImageBrowserTool_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/YBImageBrowserTool/YBImageBrowserTool.framework",
+				"${BUILT_PRODUCTS_DIR}/YYImage/YYImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YBImageBrowserTool.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -494,6 +501,7 @@
 			baseConfigurationReference = 57C4D3FCD9E537CD3FF74A06 /* Pods-YBImageBrowserTool_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M9A44D2XZU;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YBImageBrowserTool/YBImageBrowserTool-Prefix.pch";
 				INFOPLIST_FILE = "YBImageBrowserTool/YBImageBrowserTool-Info.plist";
@@ -510,6 +518,7 @@
 			baseConfigurationReference = 03A3DF6E71A1E9EE785DCA3B /* Pods-YBImageBrowserTool_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M9A44D2XZU;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YBImageBrowserTool/YBImageBrowserTool-Prefix.pch";
 				INFOPLIST_FILE = "YBImageBrowserTool/YBImageBrowserTool-Info.plist";

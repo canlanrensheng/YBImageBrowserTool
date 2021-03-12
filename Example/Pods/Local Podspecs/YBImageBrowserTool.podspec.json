@@ -1,0 +1,30 @@
+{
+  "name": "YBImageBrowserTool",
+  "version": "1.0.0",
+  "summary": "YBImageBrowserTool 解决图片预览的时候图片背景颜色问题",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/canlanrensheng/YBImageBrowserTool",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "canlanrensheng": "2649154231@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/canlanrensheng/YBImageBrowserTool.git",
+    "tag": "1.0.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "YBImageBrowserTool/Classes/**/*",
+  "dependencies": {
+    "YYImage": [
+
+    ],
+    "SDWebImage": [
+      "~> 5.0.6"
+    ]
+  }
+}

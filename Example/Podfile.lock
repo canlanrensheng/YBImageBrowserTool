@@ -1,0 +1,31 @@
+PODS:
+  - SDWebImage (5.0.6):
+    - SDWebImage/Core (= 5.0.6)
+  - SDWebImage/Core (5.0.6)
+  - YBImageBrowserTool (1.0.0):
+    - SDWebImage (~> 5.0.6)
+    - YYImage
+  - YYImage (1.0.4):
+    - YYImage/Core (= 1.0.4)
+  - YYImage/Core (1.0.4)
+
+DEPENDENCIES:
+  - YBImageBrowserTool (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - SDWebImage
+    - YYImage
+
+EXTERNAL SOURCES:
+  YBImageBrowserTool:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SDWebImage: 920f1a2ff1ca8296ad34f6e0510a1ef1d70ac965
+  YBImageBrowserTool: d61d8658f1b8ba2a83b64bd6d5d5f65e9101de9f
+  YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
+
+PODFILE CHECKSUM: f69eee8d0769a8b4732678fb256e329ecae68974
+
+COCOAPODS: 1.10.0

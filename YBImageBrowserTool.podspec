@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'YBImageBrowserTool'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of YBImageBrowserTool.'
+  s.version          = '1.0.0'
+  s.summary          = 'YBImageBrowserTool 解决图片预览的时候图片背景颜色问题'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -38,5 +38,6 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+   s.dependency 'YYImage'
+   s.dependency 'SDWebImage', '~> 5.0.6'
 end
